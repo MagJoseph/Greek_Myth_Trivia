@@ -61,17 +61,18 @@ const correctAns = document.querySelector('.correct-ans');
 const wrongAns = document.querySelector('.wrong-ans');
 const nextBtn = document.querySelector('.next-btn');
 const questionContainer = document.getElementById('question-container');
+const mainBody = document.querySelector('.main-body')
 
 let counter = 0;
 let currentIndex = 0;
 
-const startGame = () => {
+
+
+window.onload = startGame = () => {
     questDisplay.innerText = questions[currentIndex].question;
     ansGrid.forEach((grid) => {
         grid.innerHTML = questions[currentIndex].answers[currentIndex++]
     })
-   
-   
 }
 
-startGame()
+
