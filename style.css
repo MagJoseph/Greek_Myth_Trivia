@@ -59,7 +59,7 @@ p {
 }
 
 .container {
-    background-color:rgb(118, 220, 231);
+    background-color:rgb(142, 215, 223);
     opacity: 0.8;
     height: 400px;
     width: 750px;
@@ -110,13 +110,13 @@ p {
     width: 150px;
     margin: 10px 55px 40px 10px;
     float: right;
-    background-color:rgb(118, 220, 231);
-    border: 2px solid rgba(159, 245, 252, 0.7);
+    background-color:rgb(142, 215, 223);
+    border: 2px solid rgba(252, 253, 253, 0.7);
     border-radius: 15px;
     font-size: 30px;
     opacity: 0.8;
     text-shadow: 2px 3px rgb(255, 255, 255);
- 
+   
     
 }
  .next-btn:hover {
@@ -138,7 +138,8 @@ p {
      opacity: 0.8;
      padding: 15px;
      border-radius: 15px;
-    display: none;
+    visibility: hidden;
+    display: inline;
 }
 
  .wrong-ans {
@@ -149,7 +150,8 @@ p {
      opacity: 0.8;
      padding: 15px;
      border-radius: 15px;
-     display: none;
+     visibility: hidden;
+     display: inline;
  }
 
  .play-again {
@@ -160,7 +162,7 @@ p {
     font-weight: bolder;
     height: 40px;
     width: 180px;
-    background-color:rgb(118, 220, 231);
+    background-color:rgb(142, 215, 223);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
     font-size: 30px;

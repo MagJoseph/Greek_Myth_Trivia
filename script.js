@@ -80,9 +80,9 @@ const checkAnswer = () => {
             userAnswer = grid.innerText
             if (userAnswer === questions[currentIndex].correct) {
                 score += 5;
-                correctAns.style.display = 'inline'
+                correctAns.style.visibility = 'visible'
             } else {
-                wrongAns.style.display = 'inline'
+                wrongAns.style.visibility = 'visible'
             }
         })
     })
@@ -105,8 +105,8 @@ const nextQuestion = () => {
     currentIndex++;
     counter++;
     scoreDisplay.innerText = 'Score: ' + score;
-    correctAns.style.display = 'none'
-    wrongAns.style.display = 'none'
+    correctAns.style.visibility = 'hidden'
+    wrongAns.style.visibility = 'hidden'
     questDisplay.innerText = questions[currentIndex].question;
     quest1.innerText = questions[currentIndex].answers[0];
     quest2.innerText = questions[currentIndex].answers[1];
