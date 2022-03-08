@@ -61,18 +61,40 @@ const correctAns = document.querySelector('.correct-ans');
 const wrongAns = document.querySelector('.wrong-ans');
 const nextBtn = document.querySelector('.next-btn');
 const questionContainer = document.getElementById('question-container');
-const mainBody = document.querySelector('.main-body')
+
+const quest1 = document.getElementById('quest1');
+const quest2 = document.getElementById('quest2');
+const quest3 = document.getElementById('quest3');
+const quest4 = document.getElementById('quest4');
 
 let counter = 0;
 let currentIndex = 0;
 
 
 
+
 window.onload = startGame = () => {
     questDisplay.innerText = questions[currentIndex].question;
-    ansGrid.forEach((grid) => {
-        grid.innerHTML = questions[currentIndex].answers[currentIndex++]
-    })
+    quest1.innerText = questions[currentIndex].answers[0];
+    quest2.innerText = questions[currentIndex].answers[1];
+    quest3.innerText = questions[currentIndex].answers[2];
+    quest4.innerText = questions[currentIndex].answers[3];
 }
 
+const nextQuestion = () => {
+    currentIndex++;
+    questDisplay.innerText = questions[currentIndex].question;
+    quest1.innerText = questions[currentIndex].answers[0];
+    quest2.innerText = questions[currentIndex].answers[1];
+    quest3.innerText = questions[currentIndex].answers[2];
+    quest4.innerText = questions[currentIndex].answers[3];
+  
+}
 
+/*const endGame = () => {
+    if(currentIndex > 9) {
+
+    }
+}*/
+
+nextBtn.addEventListener('click', nextQuestion);
