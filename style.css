@@ -17,16 +17,27 @@ body {
   align-content: center;
 }
 
+p {
+  font-size: 30px;
+  padding: 15px;
+  margin: 25px;
+  background-color: radial-gradient(rgb(244, 248, 249),rgb(193, 209, 206));
+  background: -webkit-radial-gradient(rgb(244, 248, 249),rgb(193, 209, 206));
+  background: -moz-radial-gradient(rgb(244, 248, 249),rgb(193, 209, 206));
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
 #start-btn {
-    height: 100px;
-    width: 260px;
+    height: 70px;
+    width: 280px;
     background-color: rgb(244, 248, 249);
     opacity: 0.8;
     border: none;
     border-radius: 20px;
     font-size: 25px;
     margin-top: 40px;  
-    padding: 20px;
+    padding: 10px;
     font-weight: bold;
     text-decoration: none;
 }
