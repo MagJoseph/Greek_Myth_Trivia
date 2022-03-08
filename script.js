@@ -114,13 +114,14 @@ const nextQuestion = () => {
     quest4.innerText = questions[currentIndex].answers[3];
 
     if(counter >= 9) {
-        nextBtn.style.display = 'none';
-        playAgain.style.display = 'inline';
-       }
-  
+        nextBtn.style.display = 'none'
+        setTimeout(() => {
+            playAgain.style.display = 'inline'
+        }, 2000)
+        
 }
 
-
+}
 
 
 nextBtn.addEventListener('click', nextQuestion);

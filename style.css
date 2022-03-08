@@ -105,7 +105,7 @@ body {
     font-size: 30px;
     opacity: 0.8;
     text-shadow: 2px 3px rgb(255, 255, 255);
-    
+ 
     
 }
  .next-btn:hover {
@@ -143,11 +143,12 @@ body {
 
  .play-again {
     margin-top: 35px;
+    margin-right: 55px;
     padding: 10px;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bolder;
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 180px;
     background-color:rgb(118, 220, 231);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
@@ -155,7 +156,9 @@ body {
     opacity: 0.8;
     text-decoration: none;
     color:rgb(7, 7, 7);
+    float: right;
     display: none;
+    text-shadow: 2px 3px rgb(255, 255, 255);
  }
 
  .play-again:hover {
