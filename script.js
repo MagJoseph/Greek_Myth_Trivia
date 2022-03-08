@@ -71,6 +71,7 @@ const quest4 = document.getElementById('quest4');
 let counter = 0;
 let currentIndex = 0;
 let userAnswer = [];
+let score = 0;
 
 
 const checkAnswer = () => {
@@ -78,6 +79,7 @@ const checkAnswer = () => {
         grid.addEventListener('click', () => {
             userAnswer = grid.innerText
             if (userAnswer === questions[currentIndex].correct) {
+                score += 5;
                 correctAns.style.display = 'inline'
             } else {
                 wrongAns.style.display = 'inline'
@@ -89,6 +91,7 @@ const checkAnswer = () => {
 checkAnswer();
 
 window.onload = startGame = () => {
+    scoreDisplay.innerText = 'Score: ' + score;
     questDisplay.innerText = questions[currentIndex].question;
     quest1.innerText = questions[currentIndex].answers[0];
     quest2.innerText = questions[currentIndex].answers[1];
@@ -101,6 +104,7 @@ window.onload = startGame = () => {
 const nextQuestion = () => {
     currentIndex++;
     counter++;
+    scoreDisplay.innerText = 'Score: ' + score;
     correctAns.style.display = 'none'
     wrongAns.style.display = 'none'
     questDisplay.innerText = questions[currentIndex].question;
