@@ -55,6 +55,7 @@ body {
     align-self: center;
     border-radius: 15px;
     padding: 0px 10px;
+    margin-bottom: 15px;
  
 }
 
@@ -62,8 +63,8 @@ body {
     font-size: 35px;
     text-shadow: 2px 3px rgb(241, 243, 243);
     font-weight: bold;
-    padding: 15px;
-    margin: 15px;
+    padding: 10px;
+    margin: 10px;
 }
 
 #question-container {
@@ -112,16 +113,31 @@ body {
      box-shadow: 2px 2px 8px 8px rgba(229, 235, 235, 0.8);
   }
 
+  #answers {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      margin-top: 15px;
+  }
+
  .correct-ans {
      font-size: 35px;
      font-weight: bolder;
+     background-color:rgb(255, 255, 255);
+     opacity: 0.8;
+     padding: 15px;
+     border-radius: 15px;
     display: none;
 }
 
  .wrong-ans {
      font-size: 35px;
-     color: rgb(207, 15, 15);
+     color: rgb(254, 23, 23);
      font-weight: bolder;
+     background-color:rgb(255, 255, 255);
+     opacity: 0.8;
+     padding: 15px;
+     border-radius: 15px;
      display: none;
  }
 
