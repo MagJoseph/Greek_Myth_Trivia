@@ -61,6 +61,7 @@ const correctAns = document.querySelector('.correct-ans');
 const wrongAns = document.querySelector('.wrong-ans');
 const nextBtn = document.querySelector('.next-btn');
 const questionContainer = document.getElementById('question-container');
+const playAgain = document.querySelector('.play-again')
 
 const quest1 = document.getElementById('quest1');
 const quest2 = document.getElementById('quest2');
@@ -81,20 +82,29 @@ window.onload = startGame = () => {
     quest4.innerText = questions[currentIndex].answers[3];
 }
 
+
+
 const nextQuestion = () => {
     currentIndex++;
+    counter++;
+    console.log(counter)
     questDisplay.innerText = questions[currentIndex].question;
     quest1.innerText = questions[currentIndex].answers[0];
     quest2.innerText = questions[currentIndex].answers[1];
     quest3.innerText = questions[currentIndex].answers[2];
     quest4.innerText = questions[currentIndex].answers[3];
+
+    if(counter >= 9) {
+        nextBtn.style.display = 'none';
+        playAgain.style.display = 'inline';
+       }
   
 }
 
-/*const endGame = () => {
-    if(currentIndex > 9) {
+const checkAns = () => {
+    
+}
 
-    }
-}*/
 
 nextBtn.addEventListener('click', nextQuestion);
+
