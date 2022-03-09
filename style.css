@@ -115,7 +115,7 @@ p {
     border-radius: 15px;
     font-size: 30px;
     opacity: 0.8;
-    
+    display: inline;
 }
  .next-btn:hover {
      background-color: rgba(255, 255, 255, 0.8);
@@ -152,14 +152,12 @@ p {
      display: inline;
  }
 
- .play-again {
-    margin-top: 35px;
-    margin-right: 55px;
-    padding: 10px;
-    font-size: 25px;
-    font-weight: bolder;
-    height: 40px;
-    width: 180px;
+ #play-again {
+    margin: 0px 55px 35px 0px;
+    padding: 2px;
+    font-size: 15px;
+    height: 50px;
+    width: 160px;
     background-color:rgba(240, 159, 72, 0.9);
     border: 2px solid rgb(255, 255, 255);
     border-radius: 15px;
@@ -171,7 +169,7 @@ p {
     display: none;
  }
 
- .play-again:hover {
+ #play-again:hover {
     text-decoration: underline;
     box-shadow: 2px 2px 8px 8px rgba(229, 235, 235, 0.8);
  }
@@ -186,4 +184,11 @@ p {
     display: none;
     height: 200px;
     width: 360px;
+}
+
+.timer {
+    display: inline;
+    font-size: 22px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
 }

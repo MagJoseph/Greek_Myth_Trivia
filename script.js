@@ -61,9 +61,10 @@ const correctAns = document.querySelector('.correct-ans');
 const wrongAns = document.querySelector('.wrong-ans');
 const nextBtn = document.querySelector('.next-btn');
 const questionContainer = document.getElementById('question-container');
-const playAgain = document.querySelector('.play-again');
+const playAgain = document.querySelector('#play-again');
 const nike = document.querySelector('.vic-img');
 const loseImg = document.querySelector('.lose-img');
+const timer = document.querySelector('.timer');
 
 const quest1 = document.getElementById('quest1');
 const quest2 = document.getElementById('quest2');
@@ -130,6 +131,7 @@ const nextQuestion = () => {
 
     if(counter >= 9) {
         nextBtn.style.display = 'none'
+        stopCountdown();
         setTimeout(() => {
             playAgain.style.display = 'inline'
         }, 2000)
@@ -138,3 +140,19 @@ const nextQuestion = () => {
 
 nextBtn.addEventListener('click', nextQuestion);
 
+
+ let countdown = 50;
+const myTimer = () => {
+    if (countdown > 0) {
+       countdown --;
+       console.log(countdown)
+      timer.innerText = `${countdown} sec`;
+    }
+  }
+
+
+//const myInt = setInterval(myTimer, 1000);
+
+let stopCountdown = () => {
+     clearInterval(myInt)
+}
