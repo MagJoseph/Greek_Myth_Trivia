@@ -21,16 +21,16 @@ p {
   font-size: 30px;
   padding: 15px;
   margin: 25px;
-  background-color: radial-gradient(rgb(244, 248, 249),rgb(193, 209, 206));
-  background: -webkit-radial-gradient(rgb(244, 248, 249),rgb(193, 209, 206));
-  background: -moz-radial-gradient(rgb(244, 248, 249),rgb(193, 209, 206));
+  color:rgb(240, 159, 72);
+  background-color:rgb(244, 248, 249);
   opacity: 0.8;
-  border-radius: 15px;
+  
 }
 
 #start-btn {
     height: 70px;
     width: 280px;
+    color:rgb(7, 7, 7);
     background-color: rgb(244, 248, 249);
     opacity: 0.8;
     border: none;
@@ -59,7 +59,7 @@ p {
 }
 
 .container {
-    background-color:rgb(142, 215, 223);
+    background-color:rgba(240, 159, 72, 0.9);
     opacity: 0.8;
     height: 400px;
     width: 750px;
@@ -110,13 +110,11 @@ p {
     width: 150px;
     margin: 10px 55px 40px 10px;
     float: right;
-    background-color:rgb(142, 215, 223);
+    background-color:rgba(240, 159, 72, 0.9);
     border: 2px solid rgba(252, 253, 253, 0.7);
     border-radius: 15px;
     font-size: 30px;
     opacity: 0.8;
-    text-shadow: 2px 3px rgb(255, 255, 255);
-   
     
 }
  .next-btn:hover {
@@ -132,23 +130,23 @@ p {
   }
 
  .correct-ans {
-     font-size: 35px;
+     font-size: 30px;
      font-weight: bolder;
      background-color:rgb(255, 255, 255);
      opacity: 0.8;
-     padding: 15px;
+     padding: 10px;
      border-radius: 15px;
     visibility: hidden;
     display: inline;
 }
 
  .wrong-ans {
-     font-size: 35px;
+     font-size: 30px;
      color: rgb(254, 23, 23);
      font-weight: bolder;
      background-color:rgb(255, 255, 255);
      opacity: 0.8;
-     padding: 15px;
+     padding: 10px;
      border-radius: 15px;
      visibility: hidden;
      display: inline;

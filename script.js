@@ -81,9 +81,17 @@ const checkAnswer = () => {
             if (userAnswer === questions[currentIndex].correct) {
                 score += 5;
                 correctAns.style.visibility = 'visible'
-            } else {
+                ansGrid.forEach((grid) => {
+                    grid.style.visibility = 'hidden'
+                })
+            
+              } else {
                 wrongAns.style.visibility = 'visible'
-            }
+                ansGrid.forEach((grid) => {
+                    grid.style.visibility = 'hidden'
+                })
+                
+            } 
         })
     })
 }
@@ -107,6 +115,9 @@ const nextQuestion = () => {
     scoreDisplay.innerText = 'Score: ' + score;
     correctAns.style.visibility = 'hidden'
     wrongAns.style.visibility = 'hidden'
+    ansGrid.forEach((grid) => {
+        grid.style.visibility = 'visible'
+    })
     questDisplay.innerText = questions[currentIndex].question;
     quest1.innerText = questions[currentIndex].answers[0];
     quest2.innerText = questions[currentIndex].answers[1];
@@ -118,11 +129,8 @@ const nextQuestion = () => {
         setTimeout(() => {
             playAgain.style.display = 'inline'
         }, 2000)
-        
 }
-
 }
-
 
 nextBtn.addEventListener('click', nextQuestion);
 
