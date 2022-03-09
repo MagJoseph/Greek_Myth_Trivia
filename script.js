@@ -1,3 +1,5 @@
+
+
 const questions = [
  {
      question: "1. In Greek mythology Medusa’s hair was made of what?",
@@ -65,6 +67,7 @@ const playAgain = document.querySelector('#play-again');
 const nike = document.querySelector('.vic-img');
 const loseImg = document.querySelector('.lose-img');
 const timer = document.querySelector('.timer');
+const noTimeMsg = document.getElementById('no-time-left');
 
 const quest1 = document.getElementById('quest1');
 const quest2 = document.getElementById('quest2');
@@ -75,7 +78,7 @@ let counter = 0;
 let currentIndex = 0;
 let userAnswer = [];
 let score = 0;
-
+let countdown = 50;
 
 const checkAnswer = () => {
     ansGrid.forEach((grid) => {
@@ -131,28 +134,39 @@ const nextQuestion = () => {
 
     if(counter >= 9) {
         nextBtn.style.display = 'none'
+        scoreDisplay.innerText = 'Total Score: ' + score;
         stopCountdown();
         setTimeout(() => {
             playAgain.style.display = 'inline'
         }, 2000)
-}
+    } 
 }
 
 nextBtn.addEventListener('click', nextQuestion);
 
 
- let countdown = 50;
+ 
 const myTimer = () => {
     if (countdown > 0) {
        countdown --;
-       console.log(countdown)
-      timer.innerText = `${countdown} sec`;
+       timer.innerText = `${countdown} sec`;
+     } else if (countdown === 0) {
+         noTimeMsg.style.display = 'inline'
+         nextBtn.style.display = 'none'
+         playAgain.style.display = 'inline'
+         ansGrid.forEach((grid) => {
+            grid.style.visibility = 'hidden'
+        })
+     }
     }
-  }
+  
 
 
-//const myInt = setInterval(myTimer, 1000);
+const myInt = setInterval(myTimer, 1000);
 
 let stopCountdown = () => {
      clearInterval(myInt)
 }
+
+
+
