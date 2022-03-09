@@ -134,11 +134,14 @@ const nextQuestion = () => {
 
     if(counter >= 9) {
         nextBtn.style.display = 'none'
-        scoreDisplay.innerText = 'Total Score: ' + score;
+        setTimeout(() => {
+        scoreDisplay.innerText = 'Congrats! Total Score: ' + score;
+        scoreDisplay.style.fontSize = '50px';
+    }, 2500)
         stopCountdown();
         setTimeout(() => {
             playAgain.style.display = 'inline'
-        }, 2000)
+        }, 2500)
     } 
 }
 
