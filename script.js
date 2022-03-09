@@ -61,7 +61,9 @@ const correctAns = document.querySelector('.correct-ans');
 const wrongAns = document.querySelector('.wrong-ans');
 const nextBtn = document.querySelector('.next-btn');
 const questionContainer = document.getElementById('question-container');
-const playAgain = document.querySelector('.play-again')
+const playAgain = document.querySelector('.play-again');
+const nike = document.querySelector('.vic-img');
+const loseImg = document.querySelector('.lose-img');
 
 const quest1 = document.getElementById('quest1');
 const quest2 = document.getElementById('quest2');
@@ -84,13 +86,13 @@ const checkAnswer = () => {
                 ansGrid.forEach((grid) => {
                     grid.style.visibility = 'hidden'
                 })
-            
+                nike.style.display = 'inline'
               } else {
                 wrongAns.style.visibility = 'visible'
                 ansGrid.forEach((grid) => {
                     grid.style.visibility = 'hidden'
                 })
-                
+                loseImg.style.display = 'inline'
             } 
         })
     })
@@ -118,6 +120,8 @@ const nextQuestion = () => {
     ansGrid.forEach((grid) => {
         grid.style.visibility = 'visible'
     })
+    nike.style.display = 'none'
+    loseImg.style.display = 'none'
     questDisplay.innerText = questions[currentIndex].question;
     quest1.innerText = questions[currentIndex].answers[0];
     quest2.innerText = questions[currentIndex].answers[1];
