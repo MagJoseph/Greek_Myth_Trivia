@@ -78,7 +78,9 @@ let counter = 0;
 let currentIndex = 0;
 let userAnswer = [];
 let score = 0;
-let countdown = 50;
+let countdown = 60;
+
+
 
 const checkAnswer = () => {
     ansGrid.forEach((grid) => {
@@ -133,17 +135,18 @@ const nextQuestion = () => {
     quest4.innerText = questions[currentIndex].answers[3];
 
     if(counter >= 9) {
-        nextBtn.style.display = 'none'
-        setTimeout(() => {
-        scoreDisplay.innerText = 'Congrats! Total Score: ' + score;
-        scoreDisplay.style.fontSize = '50px';
-    }, 2500)
-        stopCountdown();
-        setTimeout(() => {
-            playAgain.style.display = 'inline'
-        }, 2500)
-    } 
+        ansGrid.forEach((grid) => {
+            grid.addEventListener('click', () => {
+                nextBtn.style.display = 'none'
+                scoreDisplay.innerText = 'Congrats! Total Score: ' + score;
+                scoreDisplay.style.fontSize = '50px';
+                playAgain.style.display = 'inline'
+                stopCountdown();
+             })
+    })
 }
+} 
+
 
 nextBtn.addEventListener('click', nextQuestion);
 

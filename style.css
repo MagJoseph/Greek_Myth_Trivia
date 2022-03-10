@@ -109,10 +109,10 @@ p {
 .next-btn {
     height: 54px;
     width: 150px;
-    margin: 10px 55px 40px 10px;
+    margin: 15px 55px 40px 15px;
     float: right;
     background-color:rgba(243, 178, 108, 0.9);
-    border: none;
+    border: 8px double rgb(250, 251, 252);
     border-radius: 15px;
     font-size: 30px;
     opacity: 0.8;
@@ -157,10 +157,10 @@ p {
     margin: 0px 55px 35px 0px;
     padding: 2px;
     font-size: 15px;
-    height: 50px;
-    width: 160px;
+    height: 40px;
+    width: 150px;
     background-color:rgba(243, 178, 108, 0.9);
-    border: none;
+    border: 8px double rgb(250, 251, 252);
     border-radius: 15px;
     font-size: 30px;
     opacity: 0.8;
