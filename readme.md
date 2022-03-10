@@ -7,10 +7,15 @@
 ***
 
 ### ***Description***
-#### I am building a Greek Mythology browser Trivia Game. The player will be asked a total of 10 questions and will earn points for correct answers. Each question will have four possible answers to choose from. There will only be one correct answer. I would like to render only one question with answers at a time. I will incorporate a "next" button that will take the user to the next question. The game will start at a welcome page and will have a "start  game" button. By clicking on it the player will be taken to a game page. There will also be a "play again" button at the end of the game, redirecting the user back to the welcome page. I would like to  have a score display at the top right corner of the page, and a total score display at the end of the game. I am using HTML, CSS and JavaScript to achieve this. 
+#### Welcome to Greek Mythology Trivia! You will answer 10 qestions and you will have 60 seconds to do so. Each question has four possible answers. Please choose wisely, only one is correct. A message and a image will display if your choice was correct or inccorect. You will be rewarded 5 points for each correct answer and you can see your score on the top of the page. If the countdown hits zero, you loose! But worry not, you can always try again! If you do not run out of time, you will see your final score right after the last question. You can also play again from there. Have fun and enjoy!
+#### All of the above was achieved by HTML, CSS and Javascript and is deployed on Surge.
 ***
 ### ***How to get started***
 #### The game starts by simply clicking the "Start Game" button. 
 ***
 ##### A Trello board was used to keep track of development progress and can be viewed here: [Trello](https://trello.com/b/8joagGiJ/trivia-project).
+***
+### ***Credits***
+#### The main image was found on [Unsplash](https://usnplash.com)
+#### Other two images were found on [Google](https://google.com)
 
