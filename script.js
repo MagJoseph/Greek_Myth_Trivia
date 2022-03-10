@@ -140,7 +140,8 @@ const nextQuestion = () => {
                 nextBtn.style.display = 'none'
                 scoreDisplay.innerText = 'Congrats! Total Score: ' + score;
                 scoreDisplay.style.fontSize = '50px';
-                playAgain.style.display = 'inline'
+                playAgain.style.display = 'inline';
+                questDisplay.innerText = '';
                 stopCountdown();
              })
     })
