@@ -93,7 +93,7 @@ const checkAnswer = () => {
                     grid.style.visibility = 'hidden'
                 })
                 nike.style.display = 'inline'
-              } else {
+        } else {
                 wrongAns.style.visibility = 'visible'
                 ansGrid.forEach((grid) => {
                     grid.style.visibility = 'hidden'
@@ -151,11 +151,13 @@ const nextQuestion = () => {
 nextBtn.addEventListener('click', nextQuestion);
 
 
- 
-const myTimer = () => {
-    if (countdown > 0) {
+ const myTimer = () => {
+      if (countdown > 0) {
        countdown --;
        timer.innerText = `${countdown} sec`;
+        if ((countdown <= 15) && (countdown > 0)) {
+           timer.style.color = 'rgb(254, 23, 23)';
+        }
      } else if (countdown === 0) {
          noTimeMsg.style.display = 'inline'
          nextBtn.style.display = 'none'
@@ -164,7 +166,7 @@ const myTimer = () => {
             grid.style.visibility = 'hidden'
         })
      }
-    }
+}
   
 
 
