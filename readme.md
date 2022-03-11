@@ -12,7 +12,7 @@
 #### If you wish to save it to your local machine, simply click "fork" in the upper right corner, then "code" and copy the SHH key and paste it to your terminal (git clone SHH).
 ***
 ### ***How to get started***
-#### The game starts by simply clicking the "Start Game" button. Link to the game [HERE](roasted-rabbit.surge.sh)
+#### The game starts by simply clicking the "Start Game" button. Link to the game [HERE](http://roasted-rabbit.surge.sh)
 
 #### A Trello board was used to keep track of development progress and can be viewed here: [Trello](https://trello.com/b/8joagGiJ/trivia-project).
 
