@@ -17,6 +17,6 @@
 #### A Trello board was used to keep track of development progress and can be viewed here: [Trello](https://trello.com/b/8joagGiJ/trivia-project).
 
 ### ***Credits***
-#### The main image was found on [Unsplash](https://usnplash.com)
+#### The main image by Photo by Hans Reniers on [Unsplash](https://usnplash.com)
 #### Images of Nike and Hades were found on [Google](https://google.com)
 
